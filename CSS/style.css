@@ -1,0 +1,216 @@
+.navbar{
+    background-color:#F3EDE8;
+    color:#78695C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.nav-list{
+    list-style-type: none;
+}
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.scroll{
+    background: none!important;
+    border: none;
+    color:#78695C;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.underline:hover{
+    text-decoration: underline;
+}
+.logo{
+    height: 60px;
+    margin: 20px;
+}
+.heroImg{
+    background-color: #F3EDE8;
+    height: 200px;
+    margin-top:auto;
+}
+.contactScroll{
+    cursor: pointer;
+}
+.name{
+    text-align: center;
+    font-size: 40px;
+    color: #78695C;
+    margin: 0px;
+    padding: 10px;
+}
+.bio{
+    text-align: center;
+    font-size: 20px;
+    color: #78695C;
+}
+.logo2{
+    float: left;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.contact{
+    background-color: #F3EDE8;
+    height: auto;
+    margin-top: 50px;
+}
+.contactMe{
+    text-align: center;
+    color: #78695C;
+    margin:auto;
+    padding-top: 20px;
+    
+}
+.please{ 
+    text-align: center;
+    color: #78695C;
+    font-size: 15px;
+}
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.num{
+    color: #78695C;
+}
+.em{
+    color: #78695C;
+}
+.phone{
+    text-align: center;
+    padding-right: 20px;
+}
+.email{
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+.myWork h1{
+    text-align: center;
+    padding: 20px;
+    color: #78695C;
+    font-size: 30px;
+}
+.workGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "DOIimage DOItext DOItext"
+    "TFtext TFtext TFimage"
+    "CCHimage CCHtext CCHtext"
+    ;
+    margin: 20px;
+    padding: 10px;
+}
+
+.DOIimage{
+    grid-area: DOIimage;
+    background-image: url(../images/1.png);
+}
+
+.DOItext{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    grid-area: DOItext;
+    color: #78695C;
+    font-size: larger;
+}
+
+.TFimage{
+    grid-area: TFimage;
+}
+.TFtext{
+    grid-area: TFtext;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #78695C;
+    font-size: larger;
+}
+.CCHimage{
+    grid-area: CCHimage;
+}
+.CCHtext{
+    grid-area: CCHtext;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #78695C;
+    font-size: larger;
+}
+
+
+
+
+
+.flexContainer{
+    display: flex;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 10px;
+    margin: 20px;
+    align-items:center;
+    justify-content:center;
+    color: #78695C;
+    font-size: larger;
+    
+   
+}
+.pic{
+    height: 100px;
+    width: 100px;
+    color: #78695C;
+}
+.mySkills h1{
+    text-align: center;
+    color: #78695C;
+    padding-top: 100px;
+    font-size: 30px;
+}
+.button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 20px auto;
+    border-color: #5E7B8C;
+    color: white;
+    background-color: #5E7B8C;
+    font-size: small;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+@media only screen and (max-width:600px) {
+
+    .workGrid{
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "DOIimage"
+        "DOItext"
+        "TFimage"
+        "TFtext"
+        "CCHimage"
+        "CCHtext"
+        ;
+    }
+    
+}
